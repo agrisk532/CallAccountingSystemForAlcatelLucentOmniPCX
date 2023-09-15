@@ -1,0 +1,16 @@
+AdventusCC RC1 call accounting system Release Notes
+by Agris Klimkans
+05Feb2014
+
+FEATURES and LIMITATIONS
+------------------------
+Default password for new users is 'symfony'.
+Password can be changed only from the Windows application.
+Administration web interface is not present.
+Users with ROLE_ADMIN role can see all database records.
+Users with ROLE_USER role can see only his/her records.
+The Windows application idle timeout has been set to 1 hour. After that the user is logged out.
+If Windows application cannot contact the Symfony application server, it will prompt for the server IP address.
+If Windows application detects the default password, the user will be forced to change it.
+Application does not store details about all calls.
+Records in database are saved only if the user presses the 'Save notes' button in Windows application.
